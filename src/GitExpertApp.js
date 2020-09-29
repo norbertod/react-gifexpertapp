@@ -20,18 +20,16 @@ export const GitExpertApp = () => {
     return (
         <>
             <h2>GifExpertApp</h2>
-            {/* se pasa al componente AddCategory una propiedad llamada setCategories 
-            en esta vez es un arreglo con el valor one punch */}
+
             <AddCategory setCategories={ setCategories }/>
             <hr/>
 
             <ol>
                 {
                     categories.map(category =>
-                        // <li key={category}>{category}</li>
+                   
                         <GifGrid 
-                        // se agrega la opcion que sino da error, se pasa la catagoria y no el id
-                        // porque todavia no hay
+
                             key={category}
                             category={category}
                         />
